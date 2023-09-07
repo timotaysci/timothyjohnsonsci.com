@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blogs on Timothy Johnson</title>
+    <link>https://timothyjohnsonsci.com/blogs/</link>
+    <description>Recent content in Blogs on Timothy Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyjohnsonsci.com/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taking the AZ-900 - a &#34;new to IT&#34; perspective.</title>
+      <link>https://timothyjohnsonsci.com/blogs/2023-04-08-az-900/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2023-04-08-az-900/</guid>
+      <description>Motivation Having recently moved from Chemical R&amp;amp;D to take up a role within the IT function I have been exposed to some thinking regarding career development outside what I am used to.
+I am most impressed with the almost universal need to keep learning new technologies within the IT space - something I am taking to heart. I am also very impressed with the want to solidify learning with certifications.</description>
+    </item>
+    
+    <item>
+      <title>Fake Text and Scientific Writing</title>
+      <link>https://timothyjohnsonsci.com/blogs/2023-01-02-fake/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2023-01-02-fake/</guid>
+      <description>Introduction  As technology continues to advance, it has become easier for people to create fake blogs and pass them off as legitimate sources of information. One tool that is being used to create these fake blogs is chatgpt, a machine learning algorithm that can generate text in a conversational style.
+While chatgpt has many legitimate uses, it is also being used to create fake blogs that are designed to manipulate readers and spread false information.</description>
+    </item>
+    
+    <item>
+      <title>Emacs as a server</title>
+      <link>https://timothyjohnsonsci.com/blogs/2022-09-24-emacsasaserver/</link>
+      <pubDate>Sat, 24 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2022-09-24-emacsasaserver/</guid>
+      <description>Emacs as a Daemon This guide will get emacs running as a server on Linux systems. This means that each time you load a file emacs is ready and doesn&amp;rsquo;t need to load. On some systems emacs start up times can be several seconds so having emacs there and ready to go can save you some real time and improve your workflows.
+I always forget how to do this so this guide is for me more than anyone else!</description>
+    </item>
+    
+    <item>
+      <title>Covid - huh?</title>
+      <link>https://timothyjohnsonsci.com/blogs/2022-07-09-covid/</link>
+      <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2022-07-09-covid/</guid>
+      <description>So after dodging the bullet for over two year, both myself and my Partner came down with Covid. We had just returned from visiting family in Spain and, after a day of feeling a little strange, I woke up with a fever and the lateral test to prove it.
+While initially not to bad at around day four my fatigue and sore throat were almost unbearable. I was struggling to swallow water and unable to recall what drugs I had taken last.</description>
+    </item>
+    
+    <item>
+      <title>Emacs as a Tool for Modern Science</title>
+      <link>https://timothyjohnsonsci.com/blogs/2022-01-31-emacs-as-a-tool/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2022-01-31-emacs-as-a-tool/</guid>
+      <description>Late last week my publication on the use of emacs within chemical R&amp;amp;D came out of early access. The full article can be found here. I wanted to use this space to address some of the comments I&amp;rsquo;ve seen posted about the early access version that went up in October.
+First of all - it has been great to see the positive reception this has had. This has been picked up by a few people, many of whom I follow - including John Kitchen and Irreal.</description>
+    </item>
+    
+    <item>
+      <title>Start-up Scripts, Screens and Jekyll</title>
+      <link>https://timothyjohnsonsci.com/blogs/2021-12-26-start-up-scripts-screens-and-jekyll/</link>
+      <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2021-12-26-start-up-scripts-screens-and-jekyll/</guid>
+      <description>Why bother? Static websites are great - tools like Jekyll make building, deploying and editing sites a cinch! So easy in fact it is easy to have sites for multiple projects all running off one server. This is great but can cause issues as manually serving each site on server reboots takes time.
+Below is an example script that will create a screen, move to the website directory and launch it.</description>
+    </item>
+    
+    <item>
+      <title>Free your Garmin Data</title>
+      <link>https://timothyjohnsonsci.com/blogs/2021-11-27-garmin-data/</link>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2021-11-27-garmin-data/</guid>
+      <description>Home is just like work after all It is a shameful reality of the current industrial complex that surrounds science that you cannot always get to your data. This may seem like a silly gripe but it has massive implications to those working everyday on data collection. If I collect some information on a chemical system I want to, more often than not, pull that data out and manipulate, transform or plot that data how I want.</description>
+    </item>
+    
+    <item>
+      <title>Learning by doing - emacs and fastref</title>
+      <link>https://timothyjohnsonsci.com/blogs/2021-08-04-learning-by-doing-emacs-and-fastref/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2021-08-04-learning-by-doing-emacs-and-fastref/</guid>
+      <description>Background It has become clear over the last year of constant emacs use for almost all my work - that this workflow is key to my long term sustainable productivity. Emacs allows for complex tasks to be completed effortlessly with planning, content production and publishing handled without any issues. Importantly customizability is key and baked in.
+It has also became clear that learning the language of emacs - elisp - is going to be a super useful tool that will allow me the flexibility to continue using this tool indefinably with the agility that I need.</description>
+    </item>
+    
+    <item>
+      <title>The Use of YASnippet to Super Charge Science Workflows</title>
+      <link>https://timothyjohnsonsci.com/blogs/2021-01-24-the_use_of_yasnippet_to_super_charge_science_workflows/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2021-01-24-the_use_of_yasnippet_to_super_charge_science_workflows/</guid>
+      <description>The Use of YASnippet to Super Charge Science Workflows Emacs (specifically the Spacemacs distro) has become my go to tool for almost all my scientific work. Writing and producing documents, organising my day and all data analysis and plotting is now done within emacs. The move away from GUI based applications to a more keyboard orientated workflows has allowed me to create at the speed I think.
+One of the key tools for that is YASnippet.</description>
+    </item>
+    
+    <item>
+      <title>Finding Tidal API Token on Linux</title>
+      <link>https://timothyjohnsonsci.com/blogs/2021-01-16-tidal_api_for_linux/</link>
+      <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2021-01-16-tidal_api_for_linux/</guid>
+      <description>Tidal on Linux Tidal is a great way to access a vast, high quality, music collection. Bit rates are significantly higher than other streaming services. It is because of this that many want to use it as the corner stone of the audiophile set ups.
+The problem? There is limited Linux support. No official GUI application exists for Tidal on Linux and the only way to access music is by the web app.</description>
+    </item>
+    
+    <item>
+      <title>Biking</title>
+      <link>https://timothyjohnsonsci.com/blogs/2020-10-11-biking/</link>
+      <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2020-10-11-biking/</guid>
+      <description>Last weekend I participated in a Audax 50 km ride in celebration of Johnson and Matthey. While I have been off the bike for a while it was great to get back in the saddle and enjoy a solid ride with friends. For my own sanity I intend to record the following to remind me of what is important:
+ Rain isn&amp;rsquo;t that bad - even with the rain and standing water, you were never cold.</description>
+    </item>
+    
+    <item>
+      <title>Saying No</title>
+      <link>https://timothyjohnsonsci.com/blogs/2020-09-05-saying-no/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2020-09-05-saying-no/</guid>
+      <description>COVID-19 has changed a lot of things. For me, one of those has been how I work and, perhaps more importantly, how I think about work.
+Like most I spent some time this year out the office working on mostly office based tasks. Data analysis, organising meetings and report writing all took up far more of my time than they had previously. Importantly I didn&amp;rsquo;t have the distraction of going to the lab or going to on a long walk to get coffee when I got frustrated by some aspect of that work.</description>
+    </item>
+    
+    <item>
+      <title>Fixing Sound for Steam Linux</title>
+      <link>https://timothyjohnsonsci.com/blogs/2020-07-20-steam-pulse-audio-fix/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2020-07-20-steam-pulse-audio-fix/</guid>
+      <description>I have had some issues with crackling sound and Steam on my latest build - notably during Fallout 4.
+To fix this I came across this post and this video - unfortunately the links in the video are dead.
+I believe it is caused by high rate sample rate audio being play though low rate kit.
+For my future reference and for anyone also stumbling across this - I please see a link to my git up which has the pulse audio .</description>
+    </item>
+    
+    <item>
+      <title>Bootable Drive Creation on Linux</title>
+      <link>https://timothyjohnsonsci.com/blogs/2020-07-05-creating-a-boot-drive-on-linux/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2020-07-05-creating-a-boot-drive-on-linux/</guid>
+      <description>This week I had the need to create a bootable drive with the aim to breathe some life into an old laptop. Below are the commends and comments to do this using the terminal in Ubuntu.
+Check for all you mounted drivers using
+df  This will print out all your drives into the terminal - you are looking for the USB drive you want to use as your bootable drive.</description>
+    </item>
+    
+    <item>
+      <title>Blogging with Emacs</title>
+      <link>https://timothyjohnsonsci.com/blogs/2020-05-18-blogging-with-emacs/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2020-05-18-blogging-with-emacs/</guid>
+      <description>Blogging with emacs I&amp;rsquo;ve been trying to use emacs for almost all my writing. With the Spacemacs distro it might just be the most distraction free writing experience you can find. I used to laugh at those stories of George R.R. Martin wiritng in WordStar but hey, I guess we all grow up and see the light!
+So for this site which I hope will be a way of logging some of my thoughts I thought emacs would be the best platform</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,116 @@
+<h1 id="table-of-contents">Table of Contents</h1>
+
+<ol>
+  <li><a href="#orgc2e3dc6">Free your Garmin Data.</a>
+    <ol>
+      <li><a href="#org591d2a3">Home is just like work after all</a></li>
+      <li><a href="#org619339b">Current Solutions</a></li>
+      <li><a href="#org03c6fbf">The solution</a></li>
+      <li><a href="#org55597f1">Close out</a></li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="orgc2e3dc6"></a></p>
+
+<h1 id="free-your-garmin-data">Free your Garmin Data.</h1>
+<p><a id="org591d2a3"></a></p>
+<h2 id="home-is-just-like-work-after-all">Home is just like work after all</h2>
+
+<p>It is a shameful reality of the current industrial complex that surrounds science that you cannot always get to your data. This may seem like a silly gripe but it has massive implications to those working everyday on data collection. If I collect some information on a chemical system I want to, more often than not, pull that data out and manipulate, transform or plot that data how I want. Modern instrument manufactures often obfuscate this process and make it hard to not use their proprietary data handling tools. Often with watermarked graphs - for an extra kick in the teeth.</p>
+
+<p>I fight this with my work but I was shocked to find out that the same holds true for my personal data collection devices. In particular my Garmin smart watch.
+<a id="org619339b"></a></p>
+<h2 id="current-solutions">Current Solutions</h2>
+
+<p>For an upcoming post (which I will link here when done) I wanted to compare my heart-rate, pace and distance travelled across various activities. I want to plot these data so I can make sense of my performance. However I was shocked to find that Garmin does not allow for the export of <strong>your</strong> data in a easy, .csv, format from the Garmin connect portal. Garmin do offer a <a href="https://developer.garmin.com/fit/fitcsvtool/">solution</a> but the generated .csv leaves a lot to be desired. Indeed it’s barely usable.</p>
+
+<p>I am not the first to come across this issue, indeed the excellent python package package <a href="https://github.com/dtcooper/python-fitparse">FitParse</a> will convert Garmin’s super special big boy proprietary data format into something more readable. I did however find that the FitParse team included a rather strange example script which didn’t parse the data in a easily plottable format. The below sample script outputs each recording as it’s own chunk of labelled data. As you can see below.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python">   <span class="c1">#Copied wholesale from  https://github.com/dtcooper/python-fitparse for demonstration purposes
+</span>    <span class="kn">import</span> <span class="nn">fitparse</span>
+    
+    <span class="c1"># Load the FIT file
+</span>    <span class="n">fitfile</span> <span class="o">=</span> <span class="n">fitparse</span><span class="p">.</span><span class="n">FitFile</span><span class="p">(</span><span class="s">"my_activity.fit"</span><span class="p">)</span>
+    
+    <span class="c1"># Iterate over all messages of type "record"
+</span>    <span class="c1"># (other types include "device_info", "file_creator", "event", etc)
+</span>    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">fitfile</span><span class="p">.</span><span class="n">get_messages</span><span class="p">(</span><span class="s">"record"</span><span class="p">):</span>
+    
+        <span class="c1"># Records can contain multiple pieces of data (ex: timestamp, latitude, longitude, etc)
+</span>        <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">record</span><span class="p">:</span>
+    
+            <span class="c1"># Print the name and value of the data (and the units if it has any)
+</span>            <span class="k">if</span> <span class="n">data</span><span class="p">.</span><span class="n">units</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">" * {}: {} ({})"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="n">data</span><span class="p">.</span><span class="n">units</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">" * {}: {}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">))</span>
+    
+        <span class="k">print</span><span class="p">(</span><span class="s">"---"</span><span class="p">)</span></code></pre></figure>
+
+<p><img src="/img/Bash_Shot.png" alt="img" /></p>
+
+<p>We are getting close but not quite where we want to be. For the reason I offer the following guide and solution for those coming after me. The script and manual are in a Git repository <a href="https://github.com/timotaysci/Garmin-Parser-Script">here</a>, feel free to send pull requests if you want to add anything.
+<a id="org03c6fbf"></a></p>
+<h2 id="the-solution">The solution</h2>
+
+<p>First things first - get a .FIT file. You set this by going to Garmin connect, your activities and selecting an activity - <a href="https://connect.garmin.com/modern/activities">here</a>. Click on an activity and then on the little cog. It’s best to do this on a full desktop/laptop. The mobile website does not give you these options. Click <code class="language-plaintext highlighter-rouge">Export Original</code>  and this will download a zip file with your activity .FIT file.</p>
+
+<p><img src="/img/Export_Shot.png" alt="img" /></p>
+
+<p>You will also need to install FitParse:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install fitparse
+</code></pre></div></div>
+
+<p>If you don’t have python set up, that is a little beyond this guide - but have a look at this <a href="https://wiki.python.org/moin/BeginnersGuide">guide</a>.</p>
+
+<p>If you extract your .FIT file to a folder and rename it as <code class="language-plaintext highlighter-rouge">activity.fit</code> and place the following script as  <code class="language-plaintext highlighter-rouge">script.py</code> in that same folder.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python">   <span class="kn">import</span> <span class="nn">fitparse</span>
+    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+    <span class="c1"># Load the FIT file
+</span>    <span class="n">fitfile</span> <span class="o">=</span> <span class="n">fitparse</span><span class="p">.</span><span class="n">FitFile</span><span class="p">(</span><span class="s">"activity.fit"</span><span class="p">)</span>
+    
+    <span class="c1">#Get the headings from the activity file
+</span>    <span class="n">allHeadings</span> <span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">fitfile</span><span class="p">.</span><span class="n">get_messages</span><span class="p">(</span><span class="s">"record"</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">record</span><span class="p">:</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">name</span><span class="p">)</span> <span class="o">+</span> <span class="s">' ('</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">units</span><span class="p">)</span> <span class="o">+</span> <span class="s">')'</span>
+            <span class="n">allHeadings</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+    <span class="c1">#Removes duplicates from headings
+</span>    <span class="n">allHeadings</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">dict</span><span class="p">.</span><span class="n">fromkeys</span><span class="p">(</span><span class="n">allHeadings</span><span class="p">))</span>
+    
+    
+    <span class="c1">#Here we iterate over the records and format them into columns which are easier to plot.
+</span>    
+    <span class="n">dictR</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span><span class="n">allHeadings</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">fitfile</span><span class="p">.</span><span class="n">get_messages</span><span class="p">(</span><span class="s">"record"</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">record</span><span class="p">:</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">name</span><span class="p">)</span> <span class="o">+</span> <span class="s">' ('</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">units</span><span class="p">)</span> <span class="o">+</span> <span class="s">')'</span>
+            <span class="n">v</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span> <span class="p">:</span> <span class="n">data</span><span class="p">.</span><span class="n">value</span><span class="p">}</span>
+            <span class="n">dictR</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">dictR</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    
+    
+    <span class="c1">#Creates a column to give activity in seconds
+</span>    <span class="n">base_dt</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">'timestamp (None)'</span><span class="p">].</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">df</span><span class="p">[</span><span class="s">'Elapsed Time (s)'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">'timestamp (None)'</span><span class="p">]</span> <span class="o">-</span> <span class="n">base_dt</span><span class="p">).</span><span class="n">dt</span><span class="p">.</span><span class="n">total_seconds</span><span class="p">()</span>
+    
+    
+    <span class="c1">#Export to .CSV
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s">'output.csv'</span><span class="p">)</span> </code></pre></figure>
+
+<p>Then simply run the script - on Linux you would do that by opening a terminal and running the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python script.py
+</code></pre></div></div>
+
+<p>You will now have a .csv file called <code class="language-plaintext highlighter-rouge">output.csv</code> which contains all your data as well as a column with elapsed time. Now, you can use this to plot whatever you like!
+<a id="org55597f1"></a></p>
+<h2 id="close-out">Close out</h2>
+
+<p>So there you have it, your data to do with how you want! Enjoy, go forth and plot!</p>
+

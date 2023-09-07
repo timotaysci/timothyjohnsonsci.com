@@ -1,0 +1,101 @@
+I"�<h1 id="table-of-contents">Table of Contents</h1>
+
+<ol>
+  <li><a href="#org967c8db">Tidal on Linux</a></li>
+  <li><a href="#org77ea389">Install Strawberry</a></li>
+  <li><a href="#org7f91ce5">Finding your Tidal API</a></li>
+  <li><a href="#orgbb85c7d">Getting Strawberry to Talk to Tidal</a></li>
+  <li><a href="#org4c0ffff">Wrapping up</a></li>
+  <li><a href="#orgbd72cb8">Extra - musings and next steps</a></li>
+</ol>
+
+<p><img src="/img/HiFi.jpg" alt="img" /></p>
+
+<p><a id="org967c8db"></a></p>
+
+<h1 id="tidal-on-linux">Tidal on Linux</h1>
+
+<p>Tidal is a great way to access a vast, high quality, music collection. Bit rates are significantly higher than other streaming services. It is because of this that many want to use it as the corner stone of the audiophile set ups.</p>
+
+<p>The problem? There is limited Linux support. No official GUI application exists for Tidal on Linux and the only way to access music is by the web app.</p>
+
+<p>Unofficial solutions do exist. The below is a guide to set up Tidal using a music player called Strawberry. I will outline at the end of this post my issues and areas I intend to work on to improve this but if you are like me and had issues with the documentation on the web, I hope the below helps you.</p>
+
+<p><a id="org77ea389"></a></p>
+
+<h1 id="install-strawberry">Install Strawberry</h1>
+
+<p>Strawberry is a fork of the popular music player Clementine. It’s useful as it does report bit rates during operation. Great for testing and confirming you are getting the best quality possible from your player:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo add-apt-repository ppa:jonaski/strawberry
+sudo apt update
+sudo apt install strawberry
+</code></pre></div></div>
+
+<p><a id="org7f91ce5"></a></p>
+
+<h1 id="finding-your-tidal-api">Finding your Tidal API</h1>
+
+<p>This part proved difficult for me. I have no access to a Windows machine and so tool like <a href="https://github.com/lucaslg26/TidalAPI">this</a> do not work. To solve this you can use files found on an android phone.</p>
+
+<ol>
+  <li>Turn on developer mode on your phone if not done so already - this differs from android version but it is a well documented process.</li>
+  <li>Ensure that your phone will allow for file transfer when connected to a PC.</li>
+  <li>
+    <p>Navigate to the tidal app files on your phone.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.../Android/data/com.aspiro.tidal/cache/okhttp
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Here you will see a bunch of files. To find out your API token run the following command:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep -r "X-Tidal-Token"
+</code></pre></div>    </div>
+  </li>
+  <li>Copy the returned value - this is your Tidal API token.</li>
+</ol>
+
+<p><a id="orgbb85c7d"></a></p>
+
+<h1 id="getting-strawberry-to-talk-to-tidal">Getting Strawberry to Talk to Tidal</h1>
+
+<ol>
+  <li>
+    <p>Open Strawberry and navigate to tools -&gt; settings.</p>
+  </li>
+  <li>
+    <p>Navigate to Tidal in the “Streaming” section, left side ribbon.</p>
+  </li>
+  <li>
+    <p>Ensure “OAuth” is ticked.</p>
+  </li>
+  <li>
+    <p>Enter your API token collected in the previous section and paste into Client ID.</p>
+  </li>
+  <li>
+    <p>Click “Login”. A browser will open, follow the prompts to log into Tidal.</p>
+  </li>
+  <li>
+    <p>A green tick should now appear below the “Login” button.</p>
+  </li>
+  <li>
+    <p>Ensure “Enable” is also ticked - this allows Tidal to appear in the left side ribbon on the main music player.</p>
+  </li>
+</ol>
+
+<p><a id="org4c0ffff"></a></p>
+
+<h1 id="wrapping-up">Wrapping up</h1>
+
+<p>That’s it. You should now access to Tidal in Strawberry. I’ve tested the bit rates of songs streamed and FLAC songs in my collection and they are very close - so a success. This seems like a reasonable way to use tidal on your Linux machine without using the web app.</p>
+
+<p><a id="orgbd72cb8"></a></p>
+
+<h1 id="extra---musings-and-next-steps">Extra - musings and next steps</h1>
+
+<p>Most of my critical listening is done at my PC. This works well but I would much rather have several listening “stations” so that I can be unbound from the desk. I have been exploring options for this and clearly I can spend much money and buy commercial solutions. Not really in the spirit. One option I’m keen to explore is the use of a raspberry Pi or similar with an external amp/DAC. Several good Pi hats <a href="https://www.hifiberry.com/">exist</a> for <a href="https://shop.pimoroni.com/collections/pirate-audio">this</a> solution or an inexpensive amp/DAC would also be an option.</p>
+
+<p>Additionally I don’t really like using GUI apps where possible - further work on my part is needed to see if I can control my Tidal music via a terminal app or from within emacs. If you have any experience in either of the areas, do reach out.</p>
+
+:ET

@@ -1,0 +1,67 @@
+<p><a id="orgdc40ca8"></a></p>
+
+<h1 id="emacs-as-a-daemon">Emacs as a Daemon</h1>
+
+<p>This guide will get emacs running as a server so that each time you load a file, emacs is ready and doesn’t need to load. I always forget how to do this so this guide is for me more than anyone else!</p>
+
+<p>First, create the following file:</p>
+
+<p>create and insert</p>
+
+<p><code class="language-plaintext highlighter-rouge">~/.config/systemd/user/emacs.service</code>.</p>
+
+<p>Within this file paste the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Unit]
+Description=Emacs text editor
+Documentation=info:emacs man:emacs(1) https://gnu.org/software/emacs/
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/emacs --daemon
+ExecStop=/usr/bin/emacsclient --eval "(kill-emacs)"
+Environment=SSH_AUTH_SOCK=%t/keyring/ssh
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+</code></pre></div></div>
+
+<p>Enable this by running:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl enable --user emacs
+systemctl start --user emacs
+</code></pre></div></div>
+
+<p>This starts the server on boot!</p>
+
+<p>Open <code class="language-plaintext highlighter-rouge">~/.bashrc</code> and add the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alias emacs="emacsclient --create-frame" to ~./bashrc
+</code></pre></div></div>
+
+<p>This means each time you type “emacs” in the terminal, it will open a new instance of the client in a new frame.</p>
+
+<p>Finally run</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xdg-mime default emacsclient.desktop text/plain
+</code></pre></div></div>
+
+<p>This will open all text files within the emacs client.</p>
+
+<p>All done! This has emacs running how <em>I</em> like it. Feel free to change to suit your workflow.</p>
+
+<p><a id="orgc17607c"></a></p>
+
+<h2 id="refrences">Refrences</h2>
+
+<p><a href="https://www.emacswiki.org/emacs/EmacsAsDaemon">https://www.emacswiki.org/emacs/EmacsAsDaemon</a></p>
+
+<p><a href="https://askubuntu.com/questions/17536/how-do-i-create-a-permanent-bash-alias">https://askubuntu.com/questions/17536/how-do-i-create-a-permanent-bash-alias</a></p>
+
+<p><a href="https://emacs.stackexchange.com/questions/31704/run-emacs-gui-from-emacsclient">https://emacs.stackexchange.com/questions/31704/run-emacs-gui-from-emacsclient</a></p>
+
+<p><a href="https://taingram.org/blog/emacs-client.html#fn.1">https://taingram.org/blog/emacs-client.html#fn.1</a></p>
+
+<p><a href="https://askubuntu.com/questions/809546/opening-text-files-with-emacsclient-by-default">https://askubuntu.com/questions/809546/opening-text-files-with-emacsclient-by-default</a></p>
+

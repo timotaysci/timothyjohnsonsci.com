@@ -1,0 +1,40 @@
+baseURL: https://timothyjohnsonsci.com
+languageCode: en-us
+title: Timothy Johnson
+
+theme: "PaperMod"
+
+params:
+
+    ShowBreadCrumbs: true
+    defaultTheme: auto
+    profileMode:
+        enabled: true
+        title: "Timothy Johnson" # optional default will be site title
+        subtitle: "The dark  amalgamation of Science and IT"
+        imageUrl: "/img/face.jpeg" # optional
+        imageWidth: 300 # custom size
+        imageHeight: 300 # custom size
+       
+
+    socialIcons:
+      - name: "github"
+        url: "https://github.com/timotaysci/"
+      - name: "researchgate"
+        url: "https://www.researchgate.net/profile/Timothy-Johnson-6"
+      - name: "mastodon"
+        url: "https://masto.ai/@timotaysci@techhub.social"
+menu:
+  main:
+    - identifier: Home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: Blogs 
+      name: Blogs
+      url: /blogs/
+      weight: 10
+    - identifier: Privacy
+      name: Privacy
+      url: /privacy/
+      weight: 20

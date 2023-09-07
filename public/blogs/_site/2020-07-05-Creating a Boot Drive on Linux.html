@@ -1,0 +1,23 @@
+<h1 id="bootable-drive-creation-on-linux">Bootable Drive Creation on Linux</h1>
+
+<p>This week I had the need to create a bootable drive with the aim to breathe some life into an old laptop. Below are the commends and comments to do this using the terminal in Ubuntu.</p>
+
+<p>Check for all you mounted drivers using</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df
+</code></pre></div></div>
+
+<p><img src="/img/dfoutput.png" alt="img" /></p>
+
+<p>This will print out all your drives into the terminal - you are looking for the USB drive you want to use as your bootable drive. Typically something like <em>/dev/sdax/</em> where x is a number. In the above example my drive is <em>/sdc1/</em>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo umount /path/where/mounted
+</code></pre></div></div>
+
+<p>This unmounts the drive - ready for your .iso to be written too.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo dd bs=4M if=/point/to/.iso  of=/dev/yourdrive status=progress oflag=sync
+</code></pre></div></div>
+
+<p>This will run through the process and - in a few minutes, you will have a bootable drive. If it doesn’t boot run the dd command on the drive minus the number ie <em>/SDA/</em> not <em>/SDAx/</em>.</p>
+

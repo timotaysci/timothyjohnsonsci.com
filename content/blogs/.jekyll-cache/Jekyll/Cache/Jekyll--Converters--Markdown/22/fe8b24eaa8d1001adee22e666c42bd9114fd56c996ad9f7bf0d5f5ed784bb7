@@ -1,0 +1,151 @@
+I"�<h1 id="table-of-contents">Table of Contents</h1>
+
+<ol>
+  <li><a href="#org48edde4">The Use of YASnippet to Super Charge Science Workflows</a></li>
+  <li><a href="#org9906369">Basic Usage</a></li>
+  <li><a href="#orgc60b04c">Meeting Notes</a></li>
+  <li><a href="#org4011d54">Python</a></li>
+  <li><a href="#org23f30bc">LaTeX</a></li>
+  <li><a href="#org3cda637">Final Thoughts</a></li>
+</ol>
+
+<p><a id="org48edde4"></a></p>
+
+<p><img src="/img/rocket.jpg" alt="img" /></p>
+
+<h1 id="the-use-of-yasnippet-to-super-charge-science-workflows">The Use of YASnippet to Super Charge Science Workflows</h1>
+
+<p><a href="https://www.gnu.org/software/emacs/">Emacs</a> (specifically the <a href="https://www.spacemacs.org/">Spacemacs</a> distro) has become my go to tool for almost all my scientific work. Writing and producing documents, organising my day and all data analysis and plotting is now done within emacs. The move away from GUI based applications to a more keyboard orientated workflows has allowed me to create at the speed I think.</p>
+
+<p>One of the key tools for that is YASnippet. Using this allows you to quickly insert blocks of text. Ideal for automating typing. I will demonstrate some usecases below. The point here is not to use what I say verbatim but to understand and apply this to your own workflows.</p>
+
+<p><a id="org9906369"></a></p>
+
+<h1 id="basic-usage">Basic Usage</h1>
+
+<p><a href="https://github.com/joaotavora/yasnippet">YASnippet</a> can be installed from malpa. <code class="language-plaintext highlighter-rouge">M-x install-package</code> will get it for you. Then either require the package in your <code class="language-plaintext highlighter-rouge">init.el</code> or add yas-snippet to the configuration layers in your <code class="language-plaintext highlighter-rouge">.spacemacs</code> - if you are using spacemacs.</p>
+
+<p>To add a new snippet simply use <code class="language-plaintext highlighter-rouge">M-x yas-new-snippet</code>. A new buffer will open, just give it a title and paste your snippet below the header. Save the buffer and run <code class="language-plaintext highlighter-rouge">M-x yas-reload-all</code> to ensure all your snippets are available. Use either <code class="language-plaintext highlighter-rouge">M-x yas-insert-snippet</code> or <code class="language-plaintext highlighter-rouge">SPC i s</code> to open the YASnippet selection buffer, then just chose which one you want. It will be automatically imported into you working buffer.</p>
+
+<p class="image-caption"><img src="/img/snippet.png" alt="img" /></p>
+<p><em>YASnippet insert buffer - this template when called would insert the words <code class="language-plaintext highlighter-rouge">test snippet</code> into your working buffer</em></p>
+
+<p><a id="orgc60b04c"></a></p>
+
+<h1 id="meeting-notes">Meeting Notes</h1>
+
+<p>A key part of my work is the production and dissemination of meeting notes. Only one thing will  makes you look as professional as well produced meeting notes circulated in a timely fashion and that is finding and referring back to notes made previously.   I have a nice setup now where I use a single .org file to keep all meeting notes.</p>
+
+<p>This .org acts like a central paper notebook but it is completely searchable. Additionally all TODOs can be linked straight into org-agenda. I have found this approach super useful however it was cumbersome to generate the meeting note template each time.</p>
+
+<p>By creating a YASnippet template I can quickly create all the heading I need for my next meeting.</p>
+
+<p>For me the key info is:</p>
+
+<ol>
+  <li>Meeting tile</li>
+  <li>Date (easily filled out with <code class="language-plaintext highlighter-rouge">C-c . RET</code>)</li>
+  <li>Attendees</li>
+  <li>Notes</li>
+  <li>Actions</li>
+</ol>
+
+<p>The actions are kept as just org mode TODOs or in a table ready to export. This is useful if I need to share the document with other.</p>
+
+<table border="2" cellspacing="0" cellpadding="0" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col class="org-left" />
+
+<col class="org-left" />
+
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th class="org-left">What?</th>
+<th class="org-left">Who?</th>
+<th class="org-left">When?</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-right">Example Task</td>
+<td class="org-right">TJ</td>
+<td class="org-right">ASAP</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&#x2026;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>If I do need to share these notes with others I copy to a separate file that generates a PDF via LaTeX. This is done using a LaTeX template. More info on this can be found below.</p>
+
+<p><a id="org4011d54"></a></p>
+
+<h1 id="python">Python</h1>
+
+<p>Org mode is a great coding environment. Code block interspersed with text is a great may to keep track of your data, plotting and calculations.</p>
+
+<p>However it is not ideal to generate the code block. This requires several key presses (<code class="language-plaintext highlighter-rouge">C-c C-, s</code>) and typing the correct header arguments (<code class="language-plaintext highlighter-rouge">python :results output :session one etc.</code>)</p>
+
+<p>On top of that you almost all my code needs pandas, matplotlib and the correct colour library imported. Keeping several python code block in YASnippet allows me to quickly produce code without the need to continually type the same stuff. An example is below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import pandas as pd
+ import matplotlib.pyplot as plt
+
+ PersonalColors = { 1:'blue',2:'red',3:'green'}
+
+ df = pd.read_csv('test.csv', names = ['x','y'])
+
+ plt.plot(df['x'],df['y'], color = PersColors[1])
+
+ plt.show()
+ #plt.savefig("test.png", dpi = 1200)
+</code></pre></div></div>
+
+<p>Having the above snippet saved allows for very fast plotting. The “PersColors” variable allows you to quickly import a personal (or corporate) colour scheme into you work. <code class="language-plaintext highlighter-rouge">plt.show()</code> is of most use while coding but <code class="language-plaintext highlighter-rouge">plt.savefig()</code> is needed once a plot is finalised so I like to have both easily accessible and just comment out which ever I do not need.</p>
+
+<p><a id="org23f30bc"></a></p>
+
+<h1 id="latex">LaTeX</h1>
+
+<p>As stated above, one of the key benefits to this type of work flow is the ability to quickly produce PDFs that can be shared with those working outside emacs and org mode. To generate PDFs from org mode is trivial but there are plenty of configuration needed to generate the right PDF.</p>
+
+<p>This includes things like the inclusion of templates for your institutions, fonts and typefaces that remain consistent over documents.</p>
+
+<p>To do this you can include various header arguments in a YASnippet and load them in at the top of your file. Some samples below:</p>
+
+<p><code class="language-plaintext highlighter-rouge">#+TITLE: Example Title</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">#+AUTHOR: TJ</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">#+OPTIONS: TOC:nil</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">#+LATEX_CLASS: report</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">#+LATEX_CLASS_OPTIONS: [a4paper]</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">#+LATEX_HEADER: \usepackage{times}</code></p>
+
+<p><a id="org3cda637"></a></p>
+
+<h1 id="final-thoughts">Final Thoughts</h1>
+
+<p>I hope this shows that YASnippet is a useful package and how you can include it in your workflows. Give it a go - see what you can automate in your day. Remember - work smarter not harder.</p>
+
+:ET

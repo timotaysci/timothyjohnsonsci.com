@@ -1,0 +1,35 @@
+I"÷<h1 id="table-of-contents">Table of Contents</h1>
+
+<ol>
+  <li><a href="#orgdb47585">Blogging with emacs</a></li>
+  <li><a href="#org7b5b0a8">org-mode</a></li>
+  <li><a href="#org1ab7f17">A word on why</a></li>
+</ol>
+
+<p><img src="/img/code.jpg" alt="img" /></p>
+
+<p><a id="orgdb47585"></a></p>
+
+<h1 id="blogging-with-emacs">Blogging with emacs</h1>
+
+<p>Iâ€™ve been trying to use emacs for almost all my writing. With the Spacemacs distro it might just be the most distraction free writing experience you can find. I used to laugh at those stories of George R.R. Martin wiritng in <a href="https://jamesclear.com/george-rr-martin">WordStar</a> but hey, I guess we all grow up and see the light!</p>
+
+<p>So for this site which I hope will be a way of logging some of my thoughts I thought emacs would be the best platform</p>
+
+<p><a id="org7b5b0a8"></a></p>
+
+<h1 id="org-mode">org-mode</h1>
+
+<p>To do this I am using org-mode, an insanely complete package that lets you organise everything using just text files. From there I will export to <a href="https://orgmode.org/manual/Markdown-Export.html">markdown</a> and, using <a href="https://jekyllrb.com/">jekyll</a> and git, export this streight to a external server and, hopefully, to readers eyes.</p>
+
+<p>Perhaps I will document this process a bit more in future updates - if only as a record to understand what I did!</p>
+
+<p><a id="org1ab7f17"></a></p>
+
+<h1 id="a-word-on-why">A word on why</h1>
+
+<p>So this blog will stand as a log of somethings I think should be said. Long form writing is often the best way to get your thoughts out and see where your arguments are flawed. I hope this acts as a therapeutic and creative outgas.</p>
+
+<p>I have a few ideas and working on upcoming posts - hopefully see you back here soon.</p>
+
+:ET

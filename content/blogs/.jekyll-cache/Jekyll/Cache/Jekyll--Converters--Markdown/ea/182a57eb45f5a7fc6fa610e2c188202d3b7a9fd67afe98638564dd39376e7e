@@ -1,0 +1,115 @@
+I"�<h1 id="learning-by-doing---emacs-and-fastref">Learning by doing - emacs and fastref</h1>
+
+<p><a id="org5cd02aa"></a></p>
+
+<p><img src="/img/code.jpg" alt="img" /></p>
+
+<h2 id="background">Background</h2>
+
+<p>It has become clear over the last year of constant emacs use for almost all my work - that this workflow is key to my long term sustainable productivity. Emacs allows for complex tasks to be completed effortlessly with planning, content production and publishing handled without any issues. Importantly customizability is key and baked in.</p>
+
+<p>It has also became clear that learning the language of emacs - elisp - is going to be a super useful tool that will allow me the flexibility to continue using this tool indefinably with the agility that I need. I want to be able to bend it to any task I might come across.</p>
+
+<p>To this end I intend to create a few minor modes that solve problems I have and, in so doing, hopefully learn how this Goliath ticks.</p>
+
+<p><a id="org8c1ad65"></a></p>
+
+<h2 id="fastref">fastref</h2>
+
+<p>The idea behind fastref is the production and insertion of references that appear quickly during talks. This personal project aimed to solve this rather nasty problem of people showing references within live presentations but not giving you enough time to write it down. Sure I could have created an <code class="language-plaintext highlighter-rouge">org-capture</code> template for this but I wanted to learn how to write my own modes, so here we are. The below is an explanation of that code. This is for my own reference but also for anyone else dipping their toes into elisp - we can all learn form each other!</p>
+
+<p>Please note. This is, almost certainly, not the best way to implement this. I am open to constructive feedback here so do reach out if you have comments.</p>
+
+<p><a id="org10bc552"></a></p>
+
+<h3 id="getting-the-pieces">Getting the “pieces”</h3>
+
+<p>My aim is to capture references. However this is not as trivial as this task appears to be. References consist of several “parts” that can be joined together in several ways. These create a style and that style differs in each field and for each user.  For that reason I wanted to abstract this problem so the below code gets from the user information of the author, journal, year, volume and page(s). These “pieces” can then be stitched together in a style the user needs.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(defun fast-ref-first-author()
+  "Gets first author for fast-ref"
+  (setq fast-ref-first (read-string "First Author: ")))
+
+(defun fast-ref-journal()
+  "Gets journal for fast-ref"
+  (setq fast-ref-jour (read-string "Journal: ")))
+
+(defun fast-ref-year()
+  "Gets year for fast-ref"
+  (setq fast-ref-yr (read-string "Year: ")))
+
+(defun fast-ref-volume()
+  "Gets volume for fast-ref"
+  (setq fast-ref-vol (read-string "Volume: ")))
+
+(defun fast-ref-pages()
+  "Gets page(s) for fast-ref"
+  (setq fast-ref-pg (read-string "Page(s): ")))
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">read-string</code> function initiates a text input in the minibuffer and stores it as <code class="language-plaintext highlighter-rouge">fast-ref-x</code>.</p>
+
+<p><a id="org5c8e913"></a></p>
+
+<h3 id="whats-the-style">What’s the style?</h3>
+
+<p>We now have the pieces but we have to construct them as a final reference. So how do we approach this problem? I define a variable <code class="language-plaintext highlighter-rouge">fast-ref-style-final</code> which concatenates the various pieces from the above section with punctuation, /et al./s and spaces. I have defined <code class="language-plaintext highlighter-rouge">plain</code>, <code class="language-plaintext highlighter-rouge">rsc</code> and <code class="language-plaintext highlighter-rouge">acs</code> using this approach. For now a user would need to define their style here and use that for their final style. This is not how the final solution will look - more on that later.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(defun fast-ref-style-final()
+  (cond
+   ((string= fast-ref-cite-style "rsc") (concat fast-ref-first ", /et al./, /" fast-ref-jour "/, " fast-ref-yr ", *" fast-ref-vol "*, " fast-ref-pg "."))
+   ((string= fast-ref-cite-style "acs") (concat fast-ref-first ", /et al./, /" fast-ref-jour "/, *" fast-ref-yr "*, /" fast-ref-vol "/, " fast-ref-pg "."))
+   ((string= fast-ref-cite-style "plain") (concat fast-ref-first ", et al., " fast-ref-jour ", " fast-ref-yr ", " fast-ref-vol ", " fast-ref-pg "."))
+   )
+  ) 
+</code></pre></div></div>
+
+<p><a id="orgc6ec228"></a></p>
+
+<h3 id="defining-behaviour">Defining behaviour</h3>
+
+<p>We also declare two variables here that dictate the behaviour of the mode. <code class="language-plaintext highlighter-rouge">fast-ref-site-style</code> sets the style of the reference - as discussed above. Here the default is <code class="language-plaintext highlighter-rouge">asc</code>. You can either set this with <code class="language-plaintext highlighter-rouge">M-x - customize-variable</code> or by setting it in your <code class="language-plaintext highlighter-rouge">init.el</code> file. <code class="language-plaintext highlighter-rouge">fast-ref-auto-insert</code> defines whether you want to have the citation auto inserted or held the kill ring. This gives the user some choice however I want to make this a per citation option (or at least an option to have it as per citation).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(defvar fast-ref-cite-style "acs" "Set the desired ref style for fast-ref")
+
+(defvar fast-ref-auto-insert t "Toggle auto put into point. nil will add to kill ring")
+</code></pre></div></div>
+
+<p><a id="orgb4f0de3"></a></p>
+
+<h3 id="bringing-it-all-together">Bringing it all together</h3>
+
+<p>Finally we define <code class="language-plaintext highlighter-rouge">fast-ref</code>. This is an interactive (ie can be activated with <code class="language-plaintext highlighter-rouge">M-x</code>) and call the various “piece” functions. Finally it checks if you wanted auto insert then either pastes into buffer or saves to kill ring.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(defun fast-ref()
+  "Start fast-ref - requests various inputs - copies to clip board"
+  (interactive)
+  (fast-ref-first-author)
+  (fast-ref-journal)
+  (fast-ref-year)
+  (fast-ref-volume)
+  (fast-ref-pages)
+  ;;(insert (fast-ref-style-final)))
+  (if fast-ref-auto-insert
+      (insert (fast-ref-style-final))
+    (kill-new (fast-ref-style-final))))
+
+(provide 'fast-ref)
+</code></pre></div></div>
+
+<p><a id="org70b8e7b"></a></p>
+
+<h2 id="final-thoughts-and-next-steps">Final thoughts and next steps</h2>
+
+<p>In around 45 lines of code I have created (i think) a super neat and useful package for my work. It isn’t the cleanest and I’m sure there are better ways to approach this problem but the learning was invaluable. It is not however done. The below is a todo list which I will cross out as they have been completed.</p>
+
+<ul>
+  <li>Let the user define the style they want in their init.el.</li>
+  <li>Convert the “pieces” into an ordered list that can be called in the style section. I think this will be a more elegant solution but needs work!</li>
+  <li>Get onto MELPA</li>
+  <li>Allow user to choose if they want to choose the insertion method at a per citation level.</li>
+</ul>
+
+<p>You can find the repo <a href="https://github.com/timotaysci/fast-ref">here</a> and the raw .org mode file <a href="https://github.com/timotaysci/fast-ref/blob/main/blogpost.org">here</a>.</p>
+
+:ET

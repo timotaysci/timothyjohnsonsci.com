@@ -1,0 +1,36 @@
+<p><a id="org436e8c4"></a></p>
+
+<h2 id="why-bother">Why bother?</h2>
+
+<p>Static websites are great - tools like <a href="https://jekyllrb.com/showcase/">Jekyll</a> make building, deploying and editing sites a cinch! So easy in fact it is easy to have sites for multiple projects all running off one server. This is great but can cause issues as manually serving each site on server reboots takes time.</p>
+
+<p>Below is an example script that will create a screen, move to the website directory and launch it.</p>
+
+<p><a id="orgbe347b7"></a></p>
+
+<h2 id="example">Example</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+#Kill any running screens
+killall screen
+#Start a screen for SiteOne. Build a serve jekyll
+screen -S Site1 -d -m
+screen -S Site1 -X stuff $'cd ~/website/SiteOne/^M' &amp;&amp;
+screen -S Site1 -X stuff $'bundle exec jekyll build^M'&amp;&amp;
+screen -S Site1 -X stuff $'bundle exec jekyll serve^M'&amp;
+#Start a screen for SiteTwo. Build a serve jekyll
+screen -S Site2 -d -m
+screen -S Site2 -X stuff $'cd ~/website/SiteTwo/^M' &amp;&amp;
+screen -S Site2 -X stuff $'bundle exec jekyll build^M'&amp;&amp;
+screen -S Site2 -X stuff $'bundle exec jekyll serve^M'&amp;
+#Give time for sites to launch. Should be done with wait. This is a bodge, bodges are fun and never break. 
+sleep 30
+printf "Done! \n"
+</code></pre></div></div>
+
+<p><a id="org8d85495"></a></p>
+
+<h2 id="wrap-up-and-next-steps">Wrap-up and next steps</h2>
+
+<p>This is scaleable - just add new screens and update the directories to reflect! If you want a challenge get this running on server start-up! I have done this with <code class="language-plaintext highlighter-rouge">crontab -e</code> - a good guide <a href="https://www.baeldung.com/linux/run-script-on-startup">here</a>.</p>
+
