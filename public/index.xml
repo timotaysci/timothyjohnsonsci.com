@@ -159,5 +159,18 @@ df  This will print out all your drives into the terminal - you are looking for 
 So for this site which I hope will be a way of logging some of my thoughts I thought emacs would be the best platform</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://timothyjohnsonsci.com/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/privacy/</guid>
+      <description>Privacy Policy
+1. Data Collection
+We want to be transparent about our data practices. I does not collect, log, or store any personally identifiable information (PII) or any other sensitive data from our users. We do not track your online activities, browsing history, or interactions with our services.
+2. Information Usage
+Since we do not collect any personal information, we have no reason to use or share such information with third parties.</description>
+    </item>
+    
   </channel>
 </rss>
