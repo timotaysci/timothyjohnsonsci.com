@@ -161,15 +161,23 @@ So for this site which I hope will be a way of logging some of my thoughts I tho
     
     <item>
       <title></title>
+      <link>https://timothyjohnsonsci.com/bites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/bites/</guid>
+      <description>August 2023  OpenCopilot - open source AI copilot Omnivore - open source read-it-later app. Intresting to see but, for me, it won&amp;rsquo;t replace an org-mode notebook. DiagramGPT - make diagrams in natural language  June 2023  Mind Wave - ChatGPT in your emacs buffers! Langchain AI-102 - Designing and Implementing a Microsoft Azure AI Solution Cert. Quantum Computation using Qiskit v0.2X - IBM Certified Associate Developer  May 2023  Passed the AI-900  April 2023  Ultimate Guide for Building a Startup with ChatGPT Prompts, from Scratch We won a ISIS 2023 impact award!</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://timothyjohnsonsci.com/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://timothyjohnsonsci.com/privacy/</guid>
-      <description>Privacy Policy
-1. Data Collection
-We want to be transparent about our data practices. I does not collect, log, or store any personally identifiable information (PII) or any other sensitive data from our users. We do not track your online activities, browsing history, or interactions with our services.
+      <description>Privacy Policy 1. Data Collection
+I want to be transparent about our data practices. I does not collect, log, or store any personally identifiable information (PII) or any other sensitive data from our users. I do not track your online activities, browsing history, or interactions with my site.
 2. Information Usage
-Since we do not collect any personal information, we have no reason to use or share such information with third parties.</description>
+Since I do not collect any personal information, I have no reason to use or share such information with third parties.</description>
     </item>
     
   </channel>

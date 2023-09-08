@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bites on Timothy Johnson</title>
+    <link>https://timothyjohnsonsci.com/bites/</link>
+    <description>Recent content in Bites on Timothy Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://timothyjohnsonsci.com/bites/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://timothyjohnsonsci.com/bites/bites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/bites/bites/</guid>
+      <description>June 2023  Mind Wave - ChatGPT in your emacs buffers! Langchain AI-102 - Designing and Implementing a Microsoft Azure AI Solution Cert. Quantum Computation using Qiskit v0.2X - IBM Certified Associate Developer  May 2023  Passed the AI-900  April 2023  Ultimate Guide for Building a Startup with ChatGPT Prompts, from Scratch We won a ISIS 2023 impact award!  March 2023  Passed the AZURE-900  December 2022  The shitting log  August 2022  Don’t Let Hierarchy Stifle Innovation  Avocation of mutt, in the mainstream, in 2022?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -18,6 +18,9 @@ params:
        
 
     socialIcons:
+
+      - name: "linkedin"
+        url: "https://www.linkedin.com/in/timothyjohnsonsci/"
       - name: "github"
         url: "https://github.com/timotaysci/"
       - name: "researchgate"
@@ -34,6 +37,10 @@ menu:
       name: Blogs
       url: /blogs/
       weight: 10
+    - identifier: Bites
+      name: Bites
+      url: /bites/
+      weight: 15
     - identifier: Privacy
       name: Privacy
       url: /privacy/
