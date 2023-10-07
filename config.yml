@@ -5,7 +5,7 @@ title: Timothy Johnson
 theme: "PaperMod"
 
 params:
-
+    comments: true
     ShowBreadCrumbs: true
     defaultTheme: auto
     profileMode:
