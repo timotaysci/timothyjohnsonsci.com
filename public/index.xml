@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 06 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyjohnsonsci.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Taking the AZ-102 - a &#34;new to IT&#34; perspective.</title>
+      <title>Taking the AI-102 - a &#34;new to IT&#34; perspective.</title>
       <link>https://timothyjohnsonsci.com/blogs/2023-10-06-ai102/</link>
       <pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://timothyjohnsonsci.com/blogs/2023-10-06-ai102/</guid>
-      <description>Taking the AI-102 Certification - A &amp;ldquo;New to IT&amp;rdquo; Perspective A year ago I transitioned from my background in Chemical R&amp;amp;D to a role within the IT function - a significant leap for me. I was quickly introduced to the world of continuous learning within the realm of IT and the well defined certification paths - something, I believe, is lacking within the chemical space.
+      <description>A year ago I transitioned from my background in Chemical R&amp;amp;D to a role within the IT function - a significant leap for me. I was quickly introduced to the world of continuous learning within the realm of IT and the well defined certification paths - something, I believe, is lacking within the chemical space.
 The need to adapt and keep up with ever-evolving technologies was evident and I realized the importance of certifications in validating my knowledge.</description>
     </item>
     
@@ -33,7 +33,7 @@ I am most impressed with the almost universal need to keep learning new technolo
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://timothyjohnsonsci.com/blogs/2023-01-02-fake/</guid>
-      <description>Introduction As technology continues to advance, it has become easier for people to create fake blogs and pass them off as legitimate sources of information. One tool that is being used to create these fake blogs is chatgpt, a machine learning algorithm that can generate text in a conversational style.
+      <description>Introduction  As technology continues to advance, it has become easier for people to create fake blogs and pass them off as legitimate sources of information. One tool that is being used to create these fake blogs is chatgpt, a machine learning algorithm that can generate text in a conversational style.
 While chatgpt has many legitimate uses, it is also being used to create fake blogs that are designed to manipulate readers and spread false information.</description>
     </item>
     
@@ -123,7 +123,7 @@ The problem? There is limited Linux support. No official GUI application exists 
       
       <guid>https://timothyjohnsonsci.com/blogs/2020-10-11-biking/</guid>
       <description>Last weekend I participated in a Audax 50 km ride in celebration of Johnson and Matthey. While I have been off the bike for a while it was great to get back in the saddle and enjoy a solid ride with friends. For my own sanity I intend to record the following to remind me of what is important:
-Rain isn&amp;rsquo;t that bad - even with the rain and standing water, you were never cold.</description>
+ Rain isn&amp;rsquo;t that bad - even with the rain and standing water, you were never cold.</description>
     </item>
     
     <item>
@@ -165,7 +165,7 @@ For my future reference and for anyone also stumbling across this - I please see
       <guid>https://timothyjohnsonsci.com/blogs/2020-07-05-creating-a-boot-drive-on-linux/</guid>
       <description>This week I had the need to create a bootable drive with the aim to breathe some life into an old laptop. Below are the commends and comments to do this using the terminal in Ubuntu.
 Check for all you mounted drivers using
-df This will print out all your drives into the terminal - you are looking for the USB drive you want to use as your bootable drive. Typically something like /dev/sdax/ where x is a number.</description>
+df  This will print out all your drives into the terminal - you are looking for the USB drive you want to use as your bootable drive.</description>
     </item>
     
     <item>
@@ -184,7 +184,7 @@ So for this site which I hope will be a way of logging some of my thoughts I tho
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://timothyjohnsonsci.com/bites/</guid>
-      <description>August 2023 OpenCopilot - open source AI copilot Omnivore - open source read-it-later app. Intresting to see but, for me, it won&amp;rsquo;t replace an org-mode notebook. DiagramGPT - make diagrams in natural language June 2023 Mind Wave - ChatGPT in your emacs buffers! Langchain AI-102 - Designing and Implementing a Microsoft Azure AI Solution Cert. Quantum Computation using Qiskit v0.2X - IBM Certified Associate Developer May 2023 Passed the AI-900 April 2023 Ultimate Guide for Building a Startup with ChatGPT Prompts, from Scratch We won a ISIS 2023 impact award!</description>
+      <description>August 2023  OpenCopilot - open source AI copilot Omnivore - open source read-it-later app. Intresting to see but, for me, it won&amp;rsquo;t replace an org-mode notebook. DiagramGPT - make diagrams in natural language  June 2023  Mind Wave - ChatGPT in your emacs buffers! Langchain AI-102 - Designing and Implementing a Microsoft Azure AI Solution Cert. Quantum Computation using Qiskit v0.2X - IBM Certified Associate Developer  May 2023  Passed the AI-900  April 2023  Ultimate Guide for Building a Startup with ChatGPT Prompts, from Scratch We won a ISIS 2023 impact award!</description>
     </item>
     
     <item>
