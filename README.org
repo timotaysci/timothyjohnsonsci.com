@@ -1,6 +1,13 @@
+* What?
+
+This repo contains my personal site.
+
+* How?
 
 
-Clone rep.
+
+
+1. Clone rep.
 
 
 #+begin_src bash
@@ -10,19 +17,19 @@ git clone git@github.com:timotaysci/timothyjohnsonsci.com.git
 
 #+end_src
 
-enter dir
+2. enter dir
 
 #+begin_src bash
 cd timothyjohnsonsci.com
 #+end_src
 
 
-grab PaperMod
+3. grab PaperMod
 #+begin_src bash
 git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
 #+end_src
 
-
+4. Build and run Hugo site
 #+begin_src
 hugo
 
