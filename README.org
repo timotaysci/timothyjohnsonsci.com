@@ -6,8 +6,7 @@ This repo contains my personal site.
 
 
 
-
-1. Clone rep.
+** Clone rep.
 
 
 #+begin_src bash
@@ -17,19 +16,19 @@ git clone git@github.com:timotaysci/timothyjohnsonsci.com.git
 
 #+end_src
 
-2. enter dir
+** Enter dir
 
 #+begin_src bash
 cd timothyjohnsonsci.com
 #+end_src
 
 
-3. grab PaperMod
+** grab PaperMod theme
 #+begin_src bash
 git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
 #+end_src
 
-4. Build and run Hugo site
+** Build and run Hugo site
 #+begin_src
 hugo
 
