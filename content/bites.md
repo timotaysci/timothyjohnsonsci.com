@@ -1,3 +1,6 @@
+# October 2023
+* [The Crimson Campaign](https://en.wikipedia.org/wiki/The_Crimson_Campaign)
+* [The Shadow of the Torturer](https://en.wikipedia.org/wiki/The_Shadow_of_the_Torturer)
 # August 2023
 * [OpenCopilot](https://opencopilot.so/) - open source AI copilot
 * [Omnivore](https://omnivore.app/) - open source read-it-later app. Intresting to see but, for me, it won't replace an org-mode notebook.
