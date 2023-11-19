@@ -12,7 +12,7 @@ params:
     profileMode:
         enabled: true
         title: "Timothy Johnson" # optional default will be site title
-        subtitle: "Adding value by joining Science, IT, AI and HPC"
+        subtitle: "Working at the edge between Science, IT, AI and HPC"
         imageUrl: "/img/face.jpeg" # optional
         imageWidth: 300 # custom size
         imageHeight: 300 # custom size
