@@ -3,6 +3,7 @@ languageCode: en-us
 title: Timothy Johnson
 
 theme: "PaperMod"
+output_location: "./"
 
 params:
     comments: true
