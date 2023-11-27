@@ -5,12 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Covid - huh? | Timothy Johnson</title>
+<title>Fixing Sound for Steam Linux | Timothy Johnson</title>
 <meta name="keywords" content="">
-<meta name="description" content="So after dodging the bullet for over two year, both myself and my Partner came down with Covid. We had just returned from visiting family in Spain and, after a day of feeling a little strange, I woke up with a fever and the lateral test to prove it.
-While initially not to bad at around day four my fatigue and sore throat were almost unbearable. I was struggling to swallow water and unable to recall what drugs I had taken last.">
+<meta name="description" content="I have had some issues with crackling sound and Steam on my latest build - notably during Fallout 4.
+To fix this I came across this post and this video - unfortunately the links in the video are dead.
+I believe it is caused by high rate sample rate audio being play though low rate kit.
+For my future reference and for anyone also stumbling across this - I please see a link to my git up which has the pulse audio .">
 <meta name="author" content="Timothy Johnson">
-<link rel="canonical" href="https://timothyjohnsonsci.com/blogs/2022-07-09-covid/">
+<link rel="canonical" href="https://timothyjohnsonsci.com/blogs/2020-07-20-steam-pulse-audio-fix/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
@@ -57,18 +59,22 @@ While initially not to bad at around day four my fatigue and sore throat were al
         }
 
     </style>
-</noscript><meta property="og:title" content="Covid - huh?" />
-<meta property="og:description" content="So after dodging the bullet for over two year, both myself and my Partner came down with Covid. We had just returned from visiting family in Spain and, after a day of feeling a little strange, I woke up with a fever and the lateral test to prove it.
-While initially not to bad at around day four my fatigue and sore throat were almost unbearable. I was struggling to swallow water and unable to recall what drugs I had taken last." />
+</noscript><meta property="og:title" content="Fixing Sound for Steam Linux" />
+<meta property="og:description" content="I have had some issues with crackling sound and Steam on my latest build - notably during Fallout 4.
+To fix this I came across this post and this video - unfortunately the links in the video are dead.
+I believe it is caused by high rate sample rate audio being play though low rate kit.
+For my future reference and for anyone also stumbling across this - I please see a link to my git up which has the pulse audio ." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://timothyjohnsonsci.com/blogs/2022-07-09-covid/" /><meta property="article:section" content="blogs" />
-<meta property="article:published_time" content="2022-07-09T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-07-09T00:00:00+00:00" />
+<meta property="og:url" content="https://timothyjohnsonsci.com/blogs/2020-07-20-steam-pulse-audio-fix/" /><meta property="article:section" content="blogs" />
+<meta property="article:published_time" content="2020-07-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-20T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Covid - huh?"/>
-<meta name="twitter:description" content="So after dodging the bullet for over two year, both myself and my Partner came down with Covid. We had just returned from visiting family in Spain and, after a day of feeling a little strange, I woke up with a fever and the lateral test to prove it.
-While initially not to bad at around day four my fatigue and sore throat were almost unbearable. I was struggling to swallow water and unable to recall what drugs I had taken last."/>
+<meta name="twitter:title" content="Fixing Sound for Steam Linux"/>
+<meta name="twitter:description" content="I have had some issues with crackling sound and Steam on my latest build - notably during Fallout 4.
+To fix this I came across this post and this video - unfortunately the links in the video are dead.
+I believe it is caused by high rate sample rate audio being play though low rate kit.
+For my future reference and for anyone also stumbling across this - I please see a link to my git up which has the pulse audio ."/>
 
 
 <script type="application/ld+json">
@@ -85,8 +91,8 @@ While initially not to bad at around day four my fatigue and sore throat were al
     {
       "@type": "ListItem",
       "position":  3 ,
-      "name": "Covid - huh?",
-      "item": "https://timothyjohnsonsci.com/blogs/2022-07-09-covid/"
+      "name": "Fixing Sound for Steam Linux",
+      "item": "https://timothyjohnsonsci.com/blogs/2020-07-20-steam-pulse-audio-fix/"
     }
   ]
 }
@@ -95,24 +101,24 @@ While initially not to bad at around day four my fatigue and sore throat were al
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Covid - huh?",
-  "name": "Covid - huh?",
-  "description": "So after dodging the bullet for over two year, both myself and my Partner came down with Covid. We had just returned from visiting family in Spain and, after a day of feeling a little strange, I woke up with a fever and the lateral test to prove it.\nWhile initially not to bad at around day four my fatigue and sore throat were almost unbearable. I was struggling to swallow water and unable to recall what drugs I had taken last.",
+  "headline": "Fixing Sound for Steam Linux",
+  "name": "Fixing Sound for Steam Linux",
+  "description": "I have had some issues with crackling sound and Steam on my latest build - notably during Fallout 4.\nTo fix this I came across this post and this video - unfortunately the links in the video are dead.\nI believe it is caused by high rate sample rate audio being play though low rate kit.\nFor my future reference and for anyone also stumbling across this - I please see a link to my git up which has the pulse audio .",
   "keywords": [
     
   ],
-  "articleBody": " So after dodging the bullet for over two year, both myself and my Partner came down with Covid. We had just returned from visiting family in Spain and, after a day of feeling a little strange, I woke up with a fever and the lateral test to prove it.\nWhile initially not to bad at around day four my fatigue and sore throat were almost unbearable. I was struggling to swallow water and unable to recall what drugs I had taken last.\nIt could have been much worse, and I’m glad that my Partner was not as badly effected as me and that we had both been fully jabbed.\nI stated to feel much better on day five and even returned to (virtual) work, however that was likely a mistake. It was quite difficult to concentrate and even more difficult to stay awake for the requisite 9-5. On reflection, I’m not sure how much work was done that week!\nIt’s interesting to also observe that our friends that had also escaped covid this time round also got it in this wave. It seems that either we all collectively let our guard down or this variant has some way to circumventing immunity. Either way try to avoid it.\nSo, lessons learned? Well I would argue there are two. 1) don’t return to work early, embrace being ill and enjoy guilt free YouTube while you can, and 2) write down the damn medication you’re taking!\n",
-  "wordCount" : "243",
+  "articleBody": "I have had some issues with crackling sound and Steam on my latest build - notably during Fallout 4.\nTo fix this I came across this post and this video - unfortunately the links in the video are dead.\nI believe it is caused by high rate sample rate audio being play though low rate kit.\nFor my future reference and for anyone also stumbling across this - I please see a link to my git up which has the pulse audio .conf fig file that - at least for now- works for me.\nTo use - backup your /etc/pulse/daemon.conf file with the below code to save a copy in your home dir:\nsudo cp /etc/pulse/daemon.conf daemon.conf_working then either clone file from git or change manually with\nsudo gedit /etc/pulse/daemon.conf *Other text editors are available!\n",
+  "wordCount" : "135",
   "inLanguage": "en",
-  "datePublished": "2022-07-09T00:00:00Z",
-  "dateModified": "2022-07-09T00:00:00Z",
+  "datePublished": "2020-07-20T00:00:00Z",
+  "dateModified": "2020-07-20T00:00:00Z",
   "author":{
     "@type": "Person",
     "name": "Timothy Johnson"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://timothyjohnsonsci.com/blogs/2022-07-09-covid/"
+    "@id": "https://timothyjohnsonsci.com/blogs/2020-07-20-steam-pulse-audio-fix/"
   },
   "publisher": {
     "@type": "Organization",
@@ -195,20 +201,23 @@ While initially not to bad at around day four my fatigue and sore throat were al
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://timothyjohnsonsci.com">Home</a>&nbsp;»&nbsp;<a href="https://timothyjohnsonsci.com/blogs/">Blogs</a></div>
     <h1 class="post-title">
-      Covid - huh?
+      Fixing Sound for Steam Linux
     </h1>
-    <div class="post-meta"><span title='2022-07-09 00:00:00 +0000 UTC'>July 9, 2022</span>&nbsp;·&nbsp;Timothy Johnson
+    <div class="post-meta">&lt;span title=&#39;2020-07-20 00:00:00 &#43;0000 UTC&#39;&gt;July 20, 2020&lt;/span&gt;&amp;nbsp;·&amp;nbsp;Timothy Johnson
 
 </div>
   </header> 
-  <div class="post-content"><p><img loading="lazy" src="/img/CovidTests.jpg" alt="img"  />
-</p>
-<p>So after dodging the bullet for over two year, both myself and my Partner came down with Covid. We had just returned from visiting family in Spain and, after a day of feeling a little strange, I woke up with a fever and the lateral test to prove it.</p>
-<p>While initially not to bad at around day four my fatigue and sore throat were almost unbearable. I was struggling to swallow water and unable to recall what drugs I had taken last.</p>
-<p>It could have been much worse, and I&rsquo;m glad that my Partner was not as badly effected as me and that we had both been fully jabbed.</p>
-<p>I stated to feel much better on day five and even returned to (virtual) work, however that was likely a mistake. It was quite difficult to concentrate and even more difficult to stay awake for the requisite 9-5. On reflection, I&rsquo;m not sure how much work was done that week!</p>
-<p>It&rsquo;s interesting to also observe that our friends that had also escaped covid this time round also got it in this wave. It seems that either we all collectively let our guard down or this variant has some way to circumventing immunity. Either way try to avoid it.</p>
-<p>So, lessons learned? Well I would argue there are two. 1) don&rsquo;t return to work early, embrace being ill and enjoy guilt free YouTube while you can, and 2) write down the damn medication you&rsquo;re taking!</p>
+  <div class="post-content"><p>I have had some issues with crackling sound and Steam on my latest build - notably during Fallout 4.</p>
+<p>To fix this I came across this post and this <a href="https://www.youtube.com/watch?v=UQ-Ml78kiEE">video</a> - unfortunately the links in the video are dead.</p>
+<p>I believe it is caused by high rate sample rate audio being play though low rate kit.</p>
+<p>For my future reference and for anyone also stumbling across this - I please see a link to my <a href="https://github.com/timotayj/PulseAudioFix">git</a> up which has the pulse audio .conf fig file that - at least for now- works for me.</p>
+<p>To use - backup your /etc/pulse/daemon.conf file with the below code to save a copy in your home dir:</p>
+<pre><code>sudo cp /etc/pulse/daemon.conf daemon.conf_working
+</code></pre>
+<p>then either clone file from git or change manually with</p>
+<pre><code>sudo gedit /etc/pulse/daemon.conf 
+</code></pre>
+<p><em>*Other text editors are available!</em></p>
 
 
   </div>
@@ -216,19 +225,17 @@ While initially not to bad at around day four my fatigue and sore throat were al
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
-  </footer><script src="https://utteranc.es/client.js"
-         repo="timotaysci/utterances"
-         issue-term="pathname"
-         theme="github-dark"
-         crossorigin="anonymous"
-         async>
-</script>
-
+  </footer>
 </article>
     </main>
     
 <footer class="footer">
     <span>&copy; 2023 <a href="https://timothyjohnsonsci.com">Timothy Johnson</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
