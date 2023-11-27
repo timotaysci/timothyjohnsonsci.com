@@ -4,6 +4,7 @@ title: Timothy Johnson
 
 theme: "hugo-PaperMod-timotaysci"
 output_location: \"./\"
+comments: true
 
 params:
     comments: true
