@@ -33,7 +33,7 @@ I am most impressed with the almost universal need to keep learning new technolo
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://timothyjohnsonsci.com/blogs/2023-01-02-fake/</guid>
-      <description>Introduction  As technology continues to advance, it has become easier for people to create fake blogs and pass them off as legitimate sources of information. One tool that is being used to create these fake blogs is chatgpt, a machine learning algorithm that can generate text in a conversational style.
+      <description>Introduction As technology continues to advance, it has become easier for people to create fake blogs and pass them off as legitimate sources of information. One tool that is being used to create these fake blogs is chatgpt, a machine learning algorithm that can generate text in a conversational style.
 While chatgpt has many legitimate uses, it is also being used to create fake blogs that are designed to manipulate readers and spread false information.</description>
     </item>
     
@@ -123,7 +123,7 @@ The problem? There is limited Linux support. No official GUI application exists 
       
       <guid>https://timothyjohnsonsci.com/blogs/2020-10-11-biking/</guid>
       <description>Last weekend I participated in a Audax 50 km ride in celebration of Johnson and Matthey. While I have been off the bike for a while it was great to get back in the saddle and enjoy a solid ride with friends. For my own sanity I intend to record the following to remind me of what is important:
- Rain isn&amp;rsquo;t that bad - even with the rain and standing water, you were never cold.</description>
+Rain isn&amp;rsquo;t that bad - even with the rain and standing water, you were never cold.</description>
     </item>
     
     <item>
@@ -165,7 +165,7 @@ For my future reference and for anyone also stumbling across this - I please see
       <guid>https://timothyjohnsonsci.com/blogs/2020-07-05-creating-a-boot-drive-on-linux/</guid>
       <description>This week I had the need to create a bootable drive with the aim to breathe some life into an old laptop. Below are the commends and comments to do this using the terminal in Ubuntu.
 Check for all you mounted drivers using
-df  This will print out all your drives into the terminal - you are looking for the USB drive you want to use as your bootable drive.</description>
+df This will print out all your drives into the terminal - you are looking for the USB drive you want to use as your bootable drive. Typically something like /dev/sdax/ where x is a number.</description>
     </item>
     
     <item>
@@ -176,6 +176,15 @@ df  This will print out all your drives into the terminal - you are looking for 
       <guid>https://timothyjohnsonsci.com/blogs/2020-05-18-blogging-with-emacs/</guid>
       <description>Blogging with emacs I&amp;rsquo;ve been trying to use emacs for almost all my writing. With the Spacemacs distro it might just be the most distraction free writing experience you can find. I used to laugh at those stories of George R.R. Martin wiritng in WordStar but hey, I guess we all grow up and see the light!
 So for this site which I hope will be a way of logging some of my thoughts I thought emacs would be the best platform</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://timothyjohnsonsci.com/blogs/2023-10-21-english-ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyjohnsonsci.com/blogs/2023-10-21-english-ai/</guid>
+      <description>The Essential Skill for the Future Workplace: Mastering English Compression for Chatbots In our rapidly evolving digital age, where information is a mere click away, honing the skill of efficiently searching for information on the web has never been more crucial. Whether you&amp;rsquo;re a researcher, a student, or simply someone trying to keep up with the ever-expanding knowledge base, the ability to navigate and extract meaningful insights from the vast ocean of data online is indispensable.</description>
     </item>
     
   </channel>
