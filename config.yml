@@ -4,12 +4,11 @@ title: Timothy Johnson
 
 theme: "hugo-PaperMod-timotaysci"
 output_location: \"./\"
-comments: true
 
 params:
     comments: true
     ShowBreadCrumbs: true
-    defaultTheme: auto
+    defaultTheme: dark
     profileMode:
         enabled: true
         title: "Timothy Johnson" # optional default will be site title
