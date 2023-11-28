@@ -11,7 +11,7 @@ params:
     defaultTheme: dark
     profileMode:
         enabled: true
-        title: "Timothy Johnson" # optional default will be site title
+        title: "Timothy Johnson" # optional kdefault will be site title
         subtitle: "Working at the edge of Science, IT, AI and HPC"
         imageUrl: "/img/face.jpeg" # optional
         imageWidth: 300 # custom size
