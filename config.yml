@@ -2,7 +2,7 @@ baseURL: https://timothyjohnsonsci.com
 languageCode: en-us
 title: Timothy Johnson
 
-theme: "hugo-PaperMod-timotaysci"
+theme: "hugo-PaperMod"
 output_location: \"./\"
 
 params:
