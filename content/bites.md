@@ -1,3 +1,8 @@
+# November 2023
+
+* [Deep Learning's AI courses](https://learn.deeplearning.ai/ )
+* [Free for Devs](https://free-for.dev/#/) - free services for devs!
+
 # October 2023
 * [The Crimson Campaign](https://en.wikipedia.org/wiki/The_Crimson_Campaign)
 * [The Shadow of the Torturer](https://en.wikipedia.org/wiki/The_Shadow_of_the_Torturer)
