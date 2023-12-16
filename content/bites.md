@@ -1,3 +1,8 @@
+# December 2023
+* Spacemacs config bankruptcy
+* [Bust Your Knee Caps (Johnny Don't Leave Me) - Pomplamoose](https://www.youtube.com/watch?v=FlDGFrP4NgI)
+
+
 # November 2023
 
 * [Deep Learning's AI courses](https://learn.deeplearning.ai/ )
