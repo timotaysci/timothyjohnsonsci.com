@@ -27,34 +27,6 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
 </noscript><meta property="og:title" content="Blogs" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -81,14 +53,10 @@
 </script>
 </head>
 
-<body class="list" id="top">
+<body class="list dark" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
+    if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>
@@ -166,19 +134,6 @@ The problem? There is limited Linux support. No official GUI application exists 
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Biking
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Last weekend I participated in a Audax 50 km ride in celebration of Johnson and Matthey. While I have been off the bike for a while it was great to get back in the saddle and enjoy a solid ride with friends. For my own sanity I intend to record the following to remind me of what is important:
-Rain isn’t that bad - even with the rain and standing water, you were never cold....</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-10-11 00:00:00 +0000 UTC'>October 11, 2020</span>&nbsp;·&nbsp;Timothy Johnson</footer>
-  <a class="entry-link" aria-label="post link to Biking" href="https://timothyjohnsonsci.com/blogs/2020-10-11-biking/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
     <h2>Navigating the Maze - Our Journey Selling a Shared Ownership Flat
     </h2>
   </header>
@@ -187,19 +142,6 @@ Rain isn’t that bad - even with the rain and standing water, you were never co
   </div>
   <footer class="entry-footer"><span title='2020-10-08 00:00:00 +0000 UTC'>October 8, 2020</span>&nbsp;·&nbsp;Timothy Johnson</footer>
   <a class="entry-link" aria-label="post link to Navigating the Maze - Our Journey Selling a Shared Ownership Flat" href="https://timothyjohnsonsci.com/blogs/2023-10-08_sharedownership/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Saying No
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>COVID-19 has changed a lot of things. For me, one of those has been how I work and, perhaps more importantly, how I think about work.
-Like most I spent some time this year out the office working on mostly office based tasks. Data analysis, organising meetings and report writing all took up far more of my time than they had previously. Importantly I didn’t have the distraction of going to the lab or going to on a long walk to get coffee when I got frustrated by some aspect of that work....</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-09-05 00:00:00 +0000 UTC'>September 5, 2020</span>&nbsp;·&nbsp;Timothy Johnson</footer>
-  <a class="entry-link" aria-label="post link to Saying No" href="https://timothyjohnsonsci.com/blogs/2020-09-05-saying-no/"></a>
 </article>
 
 <article class="post-entry"> 

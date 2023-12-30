@@ -117,32 +117,12 @@ The problem? There is limited Linux support. No official GUI application exists 
     </item>
     
     <item>
-      <title>Biking</title>
-      <link>https://timothyjohnsonsci.com/blogs/2020-10-11-biking/</link>
-      <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://timothyjohnsonsci.com/blogs/2020-10-11-biking/</guid>
-      <description>Last weekend I participated in a Audax 50 km ride in celebration of Johnson and Matthey. While I have been off the bike for a while it was great to get back in the saddle and enjoy a solid ride with friends. For my own sanity I intend to record the following to remind me of what is important:
-Rain isn&amp;rsquo;t that bad - even with the rain and standing water, you were never cold.</description>
-    </item>
-    
-    <item>
       <title>Navigating the Maze - Our Journey Selling a Shared Ownership Flat</title>
       <link>https://timothyjohnsonsci.com/blogs/2023-10-08_sharedownership/</link>
       <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://timothyjohnsonsci.com/blogs/2023-10-08_sharedownership/</guid>
       <description>Introduction Selling a home is rarely a walk in the park, but when you throw shared ownership, a global pandemic and cladding issues into the mix, you&amp;rsquo;re in for an adventure. I wanted to chronicle the rollercoaster ride we embarked on when we decided to sell our shared ownership flat. From cladding issues to bureaucratic hurdles, I&amp;rsquo;ll shed some light on the challenges we faced and how we overcame them.</description>
-    </item>
-    
-    <item>
-      <title>Saying No</title>
-      <link>https://timothyjohnsonsci.com/blogs/2020-09-05-saying-no/</link>
-      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://timothyjohnsonsci.com/blogs/2020-09-05-saying-no/</guid>
-      <description>COVID-19 has changed a lot of things. For me, one of those has been how I work and, perhaps more importantly, how I think about work.
-Like most I spent some time this year out the office working on mostly office based tasks. Data analysis, organising meetings and report writing all took up far more of my time than they had previously. Importantly I didn&amp;rsquo;t have the distraction of going to the lab or going to on a long walk to get coffee when I got frustrated by some aspect of that work.</description>
     </item>
     
     <item>
@@ -184,7 +164,7 @@ So for this site which I hope will be a way of logging some of my thoughts I tho
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://timothyjohnsonsci.com/bites/</guid>
-      <description>October 2023 The Crimson Campaign The Shadow of the Torturer August 2023 OpenCopilot - open source AI copilot Omnivore - open source read-it-later app. Intresting to see but, for me, it won&amp;rsquo;t replace an org-mode notebook. DiagramGPT - make diagrams in natural language June 2023 Mind Wave - ChatGPT in your emacs buffers! Langchain AI-102 - Designing and Implementing a Microsoft Azure AI Solution Cert. Quantum Computation using Qiskit v0.2X - IBM Certified Associate Developer May 2023 Passed the AI-900 April 2023 Ultimate Guide for Building a Startup with ChatGPT Prompts, from Scratch We won a ISIS 2023 impact award!</description>
+      <description>December 2023 Spacemacs config bankruptcy Bust Your Knee Caps (Johnny Don&amp;rsquo;t Leave Me) - Pomplamoose November 2023 Deep Learning&amp;rsquo;s AI courses Free for Devs - free services for devs! October 2023 The Crimson Campaign The Shadow of the Torturer August 2023 OpenCopilot - open source AI copilot Omnivore - open source read-it-later app. Intresting to see but, for me, it won&amp;rsquo;t replace an org-mode notebook. DiagramGPT - make diagrams in natural language June 2023 Mind Wave - ChatGPT in your emacs buffers!</description>
     </item>
     
     <item>

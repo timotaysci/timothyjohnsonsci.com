@@ -29,34 +29,6 @@ First of all - it has been great to see the positive reception this has had. Thi
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
 </noscript><meta property="og:title" content="Emacs as a Tool for Modern Science" />
 <meta property="og:description" content="Late last week my publication on the use of emacs within chemical R&amp;D came out of early access. The full article can be found here. I wanted to use this space to address some of the comments I&rsquo;ve seen posted about the early access version that went up in October.
 First of all - it has been great to see the positive reception this has had. This has been picked up by a few people, many of whom I follow - including John Kitchen and Irreal." />
@@ -126,14 +98,10 @@ First of all - it has been great to see the positive reception this has had. Thi
 </script>
 </head>
 
-<body class="" id="top">
+<body class=" dark" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
+    if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>

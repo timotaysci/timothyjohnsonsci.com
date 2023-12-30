@@ -29,34 +29,6 @@ So for this site which I hope will be a way of logging some of my thoughts I tho
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
 </noscript><meta property="og:title" content="Blogging with Emacs" />
 <meta property="og:description" content="Blogging with emacs I&rsquo;ve been trying to use emacs for almost all my writing. With the Spacemacs distro it might just be the most distraction free writing experience you can find. I used to laugh at those stories of George R.R. Martin wiritng in WordStar but hey, I guess we all grow up and see the light!
 So for this site which I hope will be a way of logging some of my thoughts I thought emacs would be the best platform" />
@@ -126,14 +98,10 @@ So for this site which I hope will be a way of logging some of my thoughts I tho
 </script>
 </head>
 
-<body class="" id="top">
+<body class=" dark" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
+    if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>

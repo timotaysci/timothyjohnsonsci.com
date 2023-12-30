@@ -29,34 +29,6 @@ Like most I spent some time this year out the office working on mostly office ba
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
 </noscript><meta property="og:title" content="Saying No" />
 <meta property="og:description" content="COVID-19 has changed a lot of things. For me, one of those has been how I work and, perhaps more importantly, how I think about work.
 Like most I spent some time this year out the office working on mostly office based tasks. Data analysis, organising meetings and report writing all took up far more of my time than they had previously. Importantly I didn&rsquo;t have the distraction of going to the lab or going to on a long walk to get coffee when I got frustrated by some aspect of that work." />
@@ -126,14 +98,10 @@ Like most I spent some time this year out the office working on mostly office ba
 </script>
 </head>
 
-<body class="" id="top">
+<body class=" dark" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
+    if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>
