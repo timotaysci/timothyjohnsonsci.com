@@ -1,7 +1,8 @@
 ---
 author: Timothy Johnson
 title:  Navigating the Maze - Our Journey Selling a Shared Ownership Flat
-date: 2020-10-08
+date: 2023-10-08
+draft: true
 ---
 
 ## Introduction
