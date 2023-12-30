@@ -66,7 +66,23 @@
 <article class="{{ $class }}">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+
+
+
+    {{- if .Params.featured_image }}
+    <div class="featured-image">
+        <img src="{{ .Params.featured_image | absURL }}" alt="{{ .Title }}" style="margin-bottom: 10px;"/>
+    </div>
+    {{- end }}
+
+
+
+
+
+
   <header class="entry-header">
+
+    
     <h2>
       {{- .Title }}
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
