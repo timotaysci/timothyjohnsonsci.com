@@ -2,6 +2,7 @@
 # April 2024
 * [My dream died, and now I'm here](https://www.youtube.com/watch?v=LKiBlGDfRU8)
 * [NixOS & Flakes Book](https://github.com/ryan4yin/nixos-and-flakes-book)
+* [Paperlib](https://github.com/Future-Scholars/paperlib) - An open-source academic paper management tool.
 
 # March 2024
 * [Emacs: modern minibuffer packages (Vertico, Consult, etc.)](https://www.youtube.com/watch?v=d3aaxOqwHhI)
