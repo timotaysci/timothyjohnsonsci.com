@@ -1,3 +1,19 @@
+
+# April 2024
+* [My dream died, and now I'm here](https://www.youtube.com/watch?v=LKiBlGDfRU8)
+* [NixOS & Flakes Book](https://github.com/ryan4yin/nixos-and-flakes-book)
+
+# March 2024
+* [Emacs: modern minibuffer packages (Vertico, Consult, etc.)](https://www.youtube.com/watch?v=d3aaxOqwHhI)
+* [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) - household management for important files (manuals, bills etc)
+* [Fabric AI](https://github.com/danielmiessler/fabric)
+
+
+# Febuary 2024
+* Vitamin D 
+* [NixOS: Everything Everywhere All At Once](https://www.youtube.com/watch?v=CwfKlX3rA6E)
+
+
 # December 2023
 * Spacemacs config bankruptcy
 * [Bust Your Knee Caps (Johnny Don't Leave Me) - Pomplamoose](https://www.youtube.com/watch?v=FlDGFrP4NgI)
