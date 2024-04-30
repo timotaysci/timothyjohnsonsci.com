@@ -63,8 +63,7 @@
 * [Next on the build list?](https://github.com/brickbots/HandiPi) A super cool handheld Pi PC
 # July 2022
 * [Should I learn COBOL?](https://en.wikipedia.org/wiki/COBOL). Probably not... 
-* [This is our undoing](https://www.lunapresspublishing.com/product-page/this-is-our-undoing-pa
-perback)
+* [This is our undoing](https://www.lunapresspublishing.com/product-page/this-is-our-undoing-paperback)
 
 
 # May 2022
