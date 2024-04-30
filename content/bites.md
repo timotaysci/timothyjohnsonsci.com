@@ -5,6 +5,7 @@
 * [Paperlib](https://github.com/Future-Scholars/paperlib) - An open-source academic paper management tool.
 * [BobbyBroccoli's whole video backlog](https://www.youtube.com/@BobbyBroccoli) - some of be best deep dive docs I've seen in a while. 
 * [Emacs: custom Org agenda](https://www.youtube.com/watch?v=UqtBXrzXPgQ) - Protesilaos Stavrou does it again, solving all my org-agenda issues in a easy to follow video. 
+* Passed the SC-900
 
 
 # March 2024
