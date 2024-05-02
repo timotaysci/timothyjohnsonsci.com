@@ -2,60 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blogs/</loc>
-    <lastmod>2023-11-08T00:00:00+00:00</lastmod>
+    <loc>https://timothyjohnsonsci.com/blogs/</loc>
+    <lastmod>2024-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2023-11-08T00:00:00+00:00</lastmod>
+    <loc>https://timothyjohnsonsci.com/blogs/2024-04-28-phone/</loc>
+    <lastmod>2024-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2023-10-06-ai102/</loc>
+    <loc>https://timothyjohnsonsci.com/</loc>
+    <lastmod>2024-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyjohnsonsci.com/blogs/2023-10-06-ai102/</loc>
     <lastmod>2023-10-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2023-04-08-az-900/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2023-04-08-az-900/</loc>
     <lastmod>2023-04-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2023-01-02-fake/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2023-01-02-fake/</loc>
     <lastmod>2023-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2022-09-24-emacsasaserver/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2022-09-24-emacsasaserver/</loc>
     <lastmod>2022-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2022-07-09-covid/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2022-07-09-covid/</loc>
     <lastmod>2022-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2022-01-31-emacs-as-a-tool/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2022-01-31-emacs-as-a-tool/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2021-12-26-start-up-scripts-screens-and-jekyll/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2021-12-26-start-up-scripts-screens-and-jekyll/</loc>
     <lastmod>2021-12-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2021-11-27-garmin-data/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2021-11-27-garmin-data/</loc>
     <lastmod>2021-11-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2021-08-04-learning-by-doing-emacs-and-fastref/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2021-08-04-learning-by-doing-emacs-and-fastref/</loc>
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2021-01-24-the_use_of_yasnippet_to_super_charge_science_workflows/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2021-01-24-the_use_of_yasnippet_to_super_charge_science_workflows/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2021-01-16-tidal_api_for_linux/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2021-01-16-tidal_api_for_linux/</loc>
     <lastmod>2021-01-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2020-07-20-steam-pulse-audio-fix/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2020-07-20-steam-pulse-audio-fix/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2020-07-05-creating-a-boot-drive-on-linux/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2020-07-05-creating-a-boot-drive-on-linux/</loc>
     <lastmod>2020-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/2020-05-18-blogging-with-emacs/</loc>
+    <loc>https://timothyjohnsonsci.com/blogs/2020-05-18-blogging-with-emacs/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/bites/</loc>
+    <loc>https://timothyjohnsonsci.com/bites/</loc>
+    <priority>0</priority>
   </url><url>
-    <loc>http://localhost:1313/privacy/</loc>
+    <loc>https://timothyjohnsonsci.com/privacy/</loc>
+    <priority>0</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://timothyjohnsonsci.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://timothyjohnsonsci.com/tags/</loc>
   </url>
 </urlset>
