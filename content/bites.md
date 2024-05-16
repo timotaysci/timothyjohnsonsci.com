@@ -1,5 +1,8 @@
 # May 2024
 * [The Secret Society Funded by Bread Tabs](https://www.youtube.com/watch?v=Ls3VkE2B8zM)
+* [LaTeX by examples](https://github.com/AnMnv/eBook?tab=readme-ov-file) - ebook project.
+* [Slow Productivity](https://www.penguin.co.uk/books/454746/slow-productivity-by-newport-cal/9780241652916) by Cal Newport (I should reread [Deep Work](https://www.amazon.co.uk/Deep-Work-Focused-Success-Distracted/dp/0349411905/ref=asc_df_0349411905/?tag=googshopuk-21&linkCode=df0&hvadid=310973726618&hvpos=&hvnetw=g&hvrand=6892970734741729205&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007009&hvtargid=pla-347635764187&psc=1&mcid=bd49bd523ac63e21b506204b8b56ad6c&th=1&psc=1) too)
+
 
 # April 2024
 * [My dream died, and now I'm here](https://www.youtube.com/watch?v=LKiBlGDfRU8)
