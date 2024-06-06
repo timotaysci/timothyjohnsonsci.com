@@ -1,3 +1,10 @@
+# June 2024
+* [Get Bummed Out](https://www.youtube.com/watch?v=GHl6xnr5qBE) by Remember Sport. 
+* [Denote](https://protesilaos.com/emacs/denote) - been using this for a while, longer form post to come, but super slick implementation of a notes package in emacs.
+
+
+
+
 # May 2024
 * [The Secret Society Funded by Bread Tabs](https://www.youtube.com/watch?v=Ls3VkE2B8zM)
 * [LaTeX by examples](https://github.com/AnMnv/eBook?tab=readme-ov-file) - ebook project.
