@@ -2,7 +2,9 @@
 * [Get Bummed Out](https://www.youtube.com/watch?v=GHl6xnr5qBE) by Remember Sport. 
 * [Denote](https://protesilaos.com/emacs/denote) - been using this for a while, longer form post to come, but super slick implementation of a notes package in emacs.
 * [Playwrite](https://playwright.dev/)
-
+* [AwsomeVM](https://awesomewm.org/) - right now I see the potential here but the work to learn is a little off putting.
+* [Time Blocking](https://asana.com/resources/what-is-time-blocking) - super charged my work flows this month. 
+* [Someday Soon](https://www.youtube.com/watch?v=RB4eGvuimRY) - Sarcastic Sounds 
 
 # May 2024
 * [The Secret Society Funded by Bread Tabs](https://www.youtube.com/watch?v=Ls3VkE2B8zM)
